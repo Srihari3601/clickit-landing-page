@@ -4,7 +4,7 @@ This is a React-based website built with **Create React App** and styled using *
 
 ## Demo
 
-A live demo of the website can be found on [GitHub Pages]((https://srihari3601.github.io/clickit-landing-page/)).
+A live demo of the website can be found on [GitHub Pages](https://srihari3601.github.io/clickit-landing-page/).
 
 ## Features
 
