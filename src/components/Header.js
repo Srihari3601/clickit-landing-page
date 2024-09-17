@@ -21,7 +21,7 @@ const Header = ({
   return (
     <header className="flex justify-between items-center p-5 bg-black">
       <div className="logo w-1/3 md:w-1/6">
-        <img src={logo} alt="ClickIt Logo" className="w-full h-auto" />
+        <img src={logo} alt="ClickIt Logo" className="w-2/4 h-auto" />
       </div>
 
       {/* Hamburger Menu */}
@@ -52,7 +52,7 @@ const Header = ({
         <div onClick={() => scrollToSection(benefitsRef)} className="text-white cursor-pointer">
           Benefits
         </div>
-        <div onClick={() => scrollToSection(heroRef)} className="bg-lime-400 text-black text-center font-bold py-2 px-4 rounded w-full md:w-32">
+        <div onClick={() => scrollToSection(heroRef)} className="bg-lime-400 text-black text-center cursor-pointer font-bold py-2 px-4 rounded w-full md:w-32">
           Get Started
         </div>
       </nav>
