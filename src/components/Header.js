@@ -3,6 +3,7 @@ import logo from '../Images/ClickItLogo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = ({
+    heroRef,
   partnersRef,
   servicesRef,
   testimonialRef,
@@ -51,7 +52,7 @@ const Header = ({
         <div onClick={() => scrollToSection(benefitsRef)} className="text-white cursor-pointer">
           Benefits
         </div>
-        <div className="bg-lime-400 text-black text-center font-bold py-2 px-4 rounded w-full md:w-32">
+        <div onClick={() => scrollToSection(heroRef)} className="bg-lime-400 text-black text-center font-bold py-2 px-4 rounded w-full md:w-32">
           Get Started
         </div>
       </nav>

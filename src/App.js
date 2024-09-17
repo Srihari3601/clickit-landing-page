@@ -10,6 +10,7 @@ import Testimonial from './components/Testimonial';
 import Footer from './components/Footer';
 
 function App() {
+  const heroref = useRef(null);
   const partnersRef = useRef(null);
   const servicesRef = useRef(null);
   const testimonialRef = useRef(null);
@@ -20,13 +21,16 @@ function App() {
     <div className="bg-black text-white">
       {/* Pass refs as props to Header for scrolling */}
       <Header
+        heroRef={heroref}
         partnersRef={partnersRef}
         servicesRef={servicesRef}
         testimonialRef={testimonialRef}
         capabilitiesRef={capabilitiesRef}
         benefitsRef={benefitsRef}
       />
-      <Hero />
+      <div ref={heroref}>
+        <Hero />
+      </div>
       <div ref={partnersRef}>
         <Partners />
       </div>
