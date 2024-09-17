@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.b963728d.css",
-    "main.js": "./static/js/main.7b1e9341.js",
+    "main.js": "./static/js/main.390aee9a.js",
     "static/js/453.6390a96b.chunk.js": "./static/js/453.6390a96b.chunk.js",
     "static/media/BussinesssMeeting2.jpg": "./static/media/BussinesssMeeting2.864b54929e5cf9baf557.jpg",
     "static/media/BussinessMeeting3.jpg": "./static/media/BussinessMeeting3.ff0502347a934edc5671.jpg",
@@ -26,11 +26,11 @@
     "static/media/circooles.svg": "./static/media/circooles.b39c3a6a34f64c68f546892f9202e0fc.svg",
     "static/media/strava.svg": "./static/media/strava.8d9484db9c4ac51e7f2d56b0daf36ac6.svg",
     "main.b963728d.css.map": "./static/css/main.b963728d.css.map",
-    "main.7b1e9341.js.map": "./static/js/main.7b1e9341.js.map",
+    "main.390aee9a.js.map": "./static/js/main.390aee9a.js.map",
     "453.6390a96b.chunk.js.map": "./static/js/453.6390a96b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b963728d.css",
-    "static/js/main.7b1e9341.js"
+    "static/js/main.390aee9a.js"
   ]
 }
