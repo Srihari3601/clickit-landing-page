@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Partners from './components/Partners';
+import Capabilities from './components/Capabilities';
+import Benefits from './components/Benefits';
+import Services from './components/Services';
+import WhyChooseUs from './components/WhyChooseUs';
+import Testimonial from './components/Testimonial';
+import Footer from './components/Footer';
 
 function App() {
+  const partnersRef = useRef(null);
+  const servicesRef = useRef(null);
+  const testimonialRef = useRef(null);
+  const capabilitiesRef = useRef(null);
+  const benefitsRef = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-black text-white">
+      {/* Pass refs as props to Header for scrolling */}
+      <Header
+        partnersRef={partnersRef}
+        servicesRef={servicesRef}
+        testimonialRef={testimonialRef}
+        capabilitiesRef={capabilitiesRef}
+        benefitsRef={benefitsRef}
+      />
+      <Hero />
+      <div ref={partnersRef}>
+        <Partners />
+      </div>
+      <div ref={servicesRef}>
+        <Services />
+      </div>
+      <div ref={testimonialRef}>
+        <Testimonial />
+      </div>
+      <div ref={capabilitiesRef}>
+        <Capabilities />
+      </div>
+      <div ref={benefitsRef}>
+        <Benefits />
+      </div>
+      <WhyChooseUs />
+      <Footer
+        partnersRef={partnersRef}
+        servicesRef={servicesRef}
+        testimonialRef={testimonialRef}
+        capabilitiesRef={capabilitiesRef}
+        benefitsRef={benefitsRef}
+      />
     </div>
   );
 }
