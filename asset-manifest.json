@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b963728d.css",
+    "main.js": "./static/js/main.7b1e9341.js",
+    "static/js/453.6390a96b.chunk.js": "./static/js/453.6390a96b.chunk.js",
+    "static/media/BussinesssMeeting2.jpg": "./static/media/BussinesssMeeting2.864b54929e5cf9baf557.jpg",
+    "static/media/BussinessMeeting3.jpg": "./static/media/BussinessMeeting3.ff0502347a934edc5671.jpg",
+    "static/media/Portrait.jpg": "./static/media/Portrait.e304a43e7f4a655140c6.jpg",
+    "static/media/ClickItLogo.png": "./static/media/ClickItLogo.608a09fd8f010bb62453.png",
+    "static/media/emailmarketing.png": "./static/media/emailmarketing.dada6483fad695493b29.png",
+    "static/media/socialMedia.png": "./static/media/socialMedia.ed7de33a6bac7c95a417.png",
+    "static/media/PPCIcon.png": "./static/media/PPCIcon.152650107fd30d20d96e.png",
+    "static/media/seo.png": "./static/media/seo.8fa70fe63f2f0850da90.png",
+    "static/media/ConentMarketing.png": "./static/media/ConentMarketing.45efdbae10ec0a6ea635.png",
+    "static/media/instagram.svg": "./static/media/instagram.1d5ceddc126dff3a9dbdc321d724e29e.svg",
+    "static/media/rocket.svg": "./static/media/rocket.debe0fc0d28652342264cd3f946c7c47.svg",
+    "static/media/dribbble.svg": "./static/media/dribbble.f935bb9720222a3b36d3f7bb8f090402.svg",
+    "static/media/quora.svg": "./static/media/quora.b073bdf1baa9a52aff1ccaf4b979ec36.svg",
+    "static/media/hourglass-split.svg": "./static/media/hourglass-split.b0c675cee704f35594f25eff2045e486.svg",
+    "static/media/linkedin.svg": "./static/media/linkedin.d692494fc1d98b6ef50414354d58b535.svg",
+    "index.html": "./index.html",
+    "static/media/star.svg": "./static/media/star.08ae6aed401fba75dde26f6302394a20.svg",
+    "static/media/facebook.svg": "./static/media/facebook.0236ededf57ca9285d18d9f0d35c8cdf.svg",
+    "static/media/layers-fill.svg": "./static/media/layers-fill.607e9d507a6510c3e8a4a65b8fcc6804.svg",
+    "static/media/people-fill.svg": "./static/media/people-fill.9cfcec480834ab42585406bf0fed681a.svg",
+    "static/media/circooles.svg": "./static/media/circooles.b39c3a6a34f64c68f546892f9202e0fc.svg",
+    "static/media/strava.svg": "./static/media/strava.8d9484db9c4ac51e7f2d56b0daf36ac6.svg",
+    "main.b963728d.css.map": "./static/css/main.b963728d.css.map",
+    "main.7b1e9341.js.map": "./static/js/main.7b1e9341.js.map",
+    "453.6390a96b.chunk.js.map": "./static/js/453.6390a96b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b963728d.css",
+    "static/js/main.7b1e9341.js"
+  ]
+}
