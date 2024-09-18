@@ -1,11 +1,46 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import bussinessmeeting2 from "../Images/BussinesssMeeting2.jpg";
 import bussinessmeeting3 from "../Images/BussinessMeeting3.jpg";
 import people from "../Images/people-fill.svg";
 import star from "../Images/star.svg"
 import Rocket from "../Images/rocket.svg"
+import 'animate.css';
 
 const WhyChooseUs = () => {
+    const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+
+  useEffect(() => {
+    const animateOnScroll = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(animateOnScroll, {
+      threshold: 0.2,
+    });
+
+    // Observe multiple elements
+    const elementsToObserve = [ref1.current, ref2.current, ref3.current];
+    elementsToObserve.forEach((el) => {
+      if (el) {
+        observer.observe(el);
+      }
+    });
+
+    return () => {
+      elementsToObserve.forEach((el) => {
+        if (el) {
+          observer.unobserve(el);
+        }
+      });
+    };
+  }, []);
   return (
     <section className="bg-gray-800 text-white py-12 px-8">
       <div className="text-4xl flex justify-center text-lime-300 mb-16 font-bold ">
@@ -88,7 +123,7 @@ const WhyChooseUs = () => {
         </h2>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-around items-center">
           {/* Stat 1 */}
-          <div className="flex flex-col items-center mb-8 md:mb-0">
+          <div className="flex flex-col items-center mb-8 md:mb-0" ref={ref1}>
             <div className="bg-lime-400 rounded-full p-4 mb-4">
               <img src={people} className="w-8" alt="people"></img>
             </div>
@@ -96,7 +131,7 @@ const WhyChooseUs = () => {
             <p className="text-gray-300 mt-2">Happy Customers</p>
           </div>
           {/* Stat 2 */}
-          <div className="flex flex-col items-center mb-8 md:mb-0">
+          <div className="flex flex-col items-center mb-8 md:mb-0" ref={ref2}>
             <div className="bg-lime-400 rounded-full p-4 mb-4">
               <img src={Rocket} className="w-8" alt="people"></img>
             </div>
@@ -104,7 +139,7 @@ const WhyChooseUs = () => {
             <p className="text-gray-300 mt-2">Success Processes</p>
           </div>
           {/* Stat 3 */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center" ref={ref3}>
             <div className="bg-lime-400 rounded-full p-4 mb-4">
               <img src={star} className="w-8" alt="people"></img>
             </div>
