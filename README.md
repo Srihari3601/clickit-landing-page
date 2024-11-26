@@ -20,10 +20,6 @@ A live demo of the website can be found on [Click it Landing Page](https://sriha
 - React Icons (for icons in the stats section)
 - gh-pages (for deployment)
 
-## Getting Started
-
-To get a local copy of this project up and running, follow these steps.
-
 ### Prerequisites
 
 Make sure you have **Node.js** and **npm** installed. You can download Node.js [here](https://nodejs.org/).
